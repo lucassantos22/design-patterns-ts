@@ -3,6 +3,7 @@ import Live from "./transmissions/Live";
 import Youtube from './platforms/Youtube'
 import Twitch from "./platforms/Twitch";
 import AdvancedLive from "./transmissions/AdvancedLive";
+import FacebookLive from "./platforms/FacebookLive";
 
 function startLive(platform: IPlatform) {
     console.log('Aguarde...')
@@ -22,3 +23,4 @@ function startAdvancedLive(platform: IPlatform) {
 
 startLive(new Youtube)
 startAdvancedLive(new Twitch)
+startAdvancedLive(new FacebookLive)
